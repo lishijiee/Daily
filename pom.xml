@@ -8,13 +8,16 @@
         <version>2.7.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.lishijiee</groupId>
+    <groupId>io.lishijiee.boot</groupId>
     <artifactId>Daily</artifactId>
-    <version>${rivision}</version>
-    <name>Daily</name>
-    <description>Daily</description>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+    <name>${project.artifactId}</name>
+    <description>日常记录</description>
+    <url>https://github.com/lishijiee/Daily</url>
+
     <properties>
-        <rivision>0.0.1-SNAPSHOT</rivision>
+        <revision>0.0.1-SNAPSHOT</revision>
         <java.version>11</java.version>
     </properties>
     <dependencies>
@@ -35,6 +38,10 @@
         </dependency>
 
     </dependencies>
+
+    <modules>
+        <module>Daily-utils</module>
+    </modules>
 
     <build>
         <plugins>
